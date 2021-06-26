@@ -58,10 +58,10 @@ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 ```
 3. Clone the necessary repositories and then access TurtleBot Folder
 ```sh
-git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
-git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b dashing-devel https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b dashing-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 cd ~/turtlebot3_ws/src/turtlebot3
 ```
 4. Remove the folders that are not required for the current project.
