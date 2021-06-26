@@ -69,14 +69,17 @@ cd ~/turtlebot3_ws/src/turtlebot3
 rm -r turtlebot3_cartographer turtlebot3_navigation2
 cd ~/turtlebot3_ws/
 ```
-5. Source the TurtleBot3 Setup file
-```sh
-source /opt/ros/dashing/setup.bash
-```
-6. Build TurtleBot packages by executing the following command.
-```sh
-colcon build
-```
+ - Sourcing & Building the TurtleBot3 Setup file
+    ```sh
+   echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc
+   source ~/.bashrc
+   colcon build --symlink-install --parallel-workers 1
+   echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+   source ~/.bashrc
+   echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+   echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+   source ~/.bashrc
+   ```
 
 ### Steps to Setup Common ML Packages:
 We need to set up python libraries such as numpy, TensorFlow Lite interpreter and opencv-python for our application to run. Instructions for setting up them are as follows:
